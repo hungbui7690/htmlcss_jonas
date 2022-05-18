@@ -1,0 +1,8 @@
+Color Highlight
+Auto Rename Tag
+
+Setting:
+- Auto Close Tag
+- Tab Size = 2
+- Auto Save = OnFocusChange
+- Format on Save
