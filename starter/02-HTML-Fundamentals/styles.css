@@ -162,3 +162,29 @@ a:active {
   font-style: italic;
   background-color: black;
 }
+
+/* Conflicts between Selectors (Multiple styles apply to 1 selector)
+- same kind of selectors >> then the last will apply
+
+1) !important (not recommened) 
+2) Inline Style
+3) ID
+4) Class or Pseudo Class
+5) Element 
+6) Universal (*) 
+*/
+#copyright {
+  color: black;
+}
+
+.copyright {
+  color: blue;
+}
+
+.text {
+  color: yellow;
+}
+
+footer p {
+  color: green;
+}
