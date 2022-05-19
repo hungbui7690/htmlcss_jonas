@@ -42,7 +42,9 @@
           height="50"
           width="50"
         />
-        <p>Posted by <strong>Laura Jones</strong> on Monday, June 21st 2027</p>
+        <p id="author">
+          Posted by <strong>Laura Jones</strong> on Monday, June 21st 2027
+        </p>
 
         <!-- when we check the image, we see the dimension is 1000x400, so we use 500x200 -->
         <img
@@ -114,29 +116,29 @@
     <aside>
       <h4>Related Posts</h4>
 
-      <ul>
+      <ul class="related">
         <li>
           <img src="./assets/related-1.jpg" alt="Related 1" width="75" />
           <a href="#">How to Learn Web Dev</a>
-          <p>By Jonas</p>
+          <p class="related-author">By Jonas</p>
         </li>
 
         <li>
           <img src="./assets/related-2.jpg" alt="Related 2" width="75" />
           <a href="#">The Unknown Powers of CSS</a>
-          <p>By Jim</p>
+          <p class="related-author">By Jim</p>
         </li>
 
         <li>
           <img src="./assets/related-3.jpg" alt="Related 3" width="75" />
           <a href="#">Why Javascript is Awesome</a>
-          <p>By Matilda</p>
+          <p class="related-author">By Matilda</p>
         </li>
       </ul>
     </aside>
 
     <footer>
-      <p>Copyright &copy; 2027 by <em>The Code Magazine.</em></p>
+      <p id="copyright">Copyright &copy; 2027 by <em>The Code Magazine.</em></p>
     </footer>
   </body>
 </html>

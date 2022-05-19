@@ -43,11 +43,35 @@ li {
 
 /*text in <p> in <footer> normally are smaller than the others*/
 /* decendent selectors: all elements that are children of <footer> */
-footer p {
+/* footer p {
+  font-size: 16px;
+} */
+#copyright {
   font-size: 16px;
 }
-
 /* hard to read >> use ID & class */
-article header p {
+/* article header p {
   font-style: italic;
+} */
+
+#author {
+  font-style: italic;
+  font-size: 18px;
+}
+
+.related-author {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* ul {
+  list-style: none;
+} */
+
+/*  
+  why we use class in this case? There is only 1 <ul> that we want with this style.
+  - The reason is in the real world, we almost never use id. We always use class to prepare for the future 
+*/
+.related {
+  list-style: none;
 }

@@ -1,0 +1,12 @@
+Font: 
+- font-size
+- font-style (italic)
+- font-transform (uppercase)
+- font-family (sans-serif)
+- font-weight (bold)
+
+Descendents Selectors: select ALL children in that tag 
+	i.e: footer p{}: select all <p> tag in <footer> 
+	
+ul, ol:
+- list-style: none (remove bullets)
