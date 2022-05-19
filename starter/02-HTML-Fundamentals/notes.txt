@@ -1,3 +1,18 @@
+===VSCODE===
+Extensions: 
+- Color Highlight
+- Auto Rename Tag
+- Image Preview
+- Live Server
+- Highlight Matching Tag
+
+Setting:
+- Auto Close Tag = checked
+- Tab Size = 2
+- Auto Save = OnFocusChange
+- Format on Save = checked
+
+===Notes===
 Font: 
 - font-size
 - font-style (italic)
