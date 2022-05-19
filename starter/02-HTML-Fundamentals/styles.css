@@ -97,3 +97,40 @@ aside {
   border-top: 5px solid #7ea690;
   border-bottom: 5px solid #7ea690;
 }
+
+/* .first-li {
+  font-weight: bold;
+} */
+
+/* pseudo CLASS */
+/* using pseudo class instead of setting class */
+li:first-child {
+  font-weight: bold;
+}
+
+li:last-child {
+  font-style: italic;
+}
+
+/* 2nd child */
+li:nth-child(2) {
+  color: #222;
+}
+
+/* odd || even */
+li:nth-child(odd) {
+  color: #111;
+}
+
+/* select <p> that is the first child of the <article> >> but because the 1st child of the <article> is the <header>, so it does not affect anything
+  If we add <p> as the first child of <article>, it will work normally
+
+  >> we should use the pseudo class in the case that all the chilren are the same tag (i.e: <ul> <li>, <ol> <li>
+*/
+article p:first-child {
+  color: red;
+}
+
+article p:last-child {
+  color: red;
+}

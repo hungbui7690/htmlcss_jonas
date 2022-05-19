@@ -26,6 +26,8 @@ Descendents Selectors: select ALL children in that tag
 ul, ol:
 - list-style: none (remove bullets)
 
+use class instead of id for future preparations 
+
 
 background-color: #f7f7f7;
 color: #444;
