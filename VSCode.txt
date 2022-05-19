@@ -28,6 +28,8 @@ ul, ol:
 
 use class instead of id for future preparations 
 
+a:link{} a:visited{}, a:hover{}, a:active{}
+- text-decoration:none;
 
 background-color: #f7f7f7;
 color: #444;

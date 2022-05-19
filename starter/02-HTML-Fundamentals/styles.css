@@ -134,3 +134,31 @@ article p:first-child {
 article p:last-child {
   color: red;
 }
+
+/* styling Links */
+/* we don't do this >> don't style just the <a>, but we must style based on the states of the links */
+/* a {
+  color: #7ea690;
+} */
+
+/* target the one which has href attribute, won't affect the <a> which does not have the href attribute */
+a:link {
+  color: #7ea690;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #7ea690;
+}
+
+a:hover {
+  color: orangered;
+  font-weight: bold;
+  text-decoration: underline wavy orangered;
+}
+
+a:active {
+  color: yellow;
+  font-style: italic;
+  background-color: black;
+}
