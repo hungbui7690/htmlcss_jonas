@@ -20,6 +20,12 @@ Font:
 - font-family (sans-serif)
 - font-weight (bold)
 
+---------------------------------------
+background-color: #f7f7f7;
+color: #444;
+
+---------------------------------------
+
 Descendents Selectors: select ALL children in that tag 
 	i.e: footer p{}: select all <p> tag in <footer> 
 	
@@ -68,7 +74,12 @@ Collapsing Margins: when we have 2 margins occupy the same space, just 1 of them
 width: 30px;
 height: auto; // scale height base on height
 
-
 ---------------------------------------
-background-color: #f7f7f7;
-color: #444;
+
+put everything in the container >> <div class="container"> </div>
+
+.container {
+  width: 800px;
+  margin: 0 auto;
+}
+

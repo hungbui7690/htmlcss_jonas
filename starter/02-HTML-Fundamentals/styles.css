@@ -143,6 +143,12 @@ a:active {
 } */
 
 /* ======================== SECTIONS ====================== */
+
+.container {
+  width: 800px;
+  margin: 0 auto;
+}
+
 nav {
   font-size: 18px;
 }
