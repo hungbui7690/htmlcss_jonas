@@ -19,6 +19,7 @@
   not every properties are inheritted >> just text, color properties are inheritted 
   NOT INHERITTED: border
 */
+/* || ======================= GENERAL ======================= || */
 body {
   font-family: sans-serif;
   color: #444; /* effected, but it is easy to be overwritten by the other rule*/
@@ -141,7 +142,7 @@ a:active {
   font-style: italic;
 } */
 
-/* ======================================================== */
+/* ======================== SECTIONS ====================== */
 nav {
   font-size: 18px;
 }
@@ -150,6 +151,7 @@ nav {
   background-color: #f7f7f7;
   padding: 20px 40px; /*topbot leftright*/
   margin-bottom: 60px;
+  height: 80px;
 }
 
 .post-header {
@@ -165,6 +167,7 @@ aside {
   border-top: 5px solid #7ea690;
   border-bottom: 5px solid #7ea690;
   padding: 50px 20px;
+  width: 500px;
 }
 
 #author {
@@ -175,6 +178,11 @@ aside {
 .related-author {
   font-size: 18px;
   font-weight: bold;
+}
+
+.post-img {
+  width: 100%;
+  height: auto;
 }
 
 /* ul {
