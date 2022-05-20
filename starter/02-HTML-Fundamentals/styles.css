@@ -1,15 +1,20 @@
-/* 
-  h1{}: ALL h1 tags
+/* Inheritance vs Universal Selector */
 
+* {
+  /* 
+    universal selector: no inheritance >> just apply to all elements >> easy to overwrite
+    every single element will have border-top 
+  */
+  /* border-top: 5px solid #7ea690; */
+}
+/* 
+  not every properties are inheritted >> just text, color properties are inheritted 
+  NOT INHERITTED: border
 */
-h1,
-h2,
-h3,
-h4,
-p,
-li {
+body {
   font-family: sans-serif;
-  color: #444;
+  color: #444; /* effected, but it is easy to be overwritten by the other rule*/
+  border-top: 5px solid #7ea690; /* not inheritted, just appears on the top of the site >> if we put it on the universal selector, it will be inheritted to all elements*/
 }
 
 h1,
