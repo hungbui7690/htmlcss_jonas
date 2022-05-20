@@ -1,3 +1,9 @@
+/* in practice, we mostly use hexadecimal colors, and rgba when we need transparency 
+- black 0, 0, 0
+- white 255, 255, 255
+- gray 4, 4, 4 >> #444 >> same code in between 0 & 255
+*/
+
 /* Inheritance vs Universal Selector */
 
 * {
@@ -6,6 +12,8 @@
     every single element will have border-top 
   */
   /* border-top: 5px solid #7ea690; */
+  margin: 0;
+  padding: 0;
 }
 /* 
   not every properties are inheritted >> just text, color properties are inheritted 
@@ -31,10 +39,13 @@ h1 {
 
 h2 {
   font-size: 40px;
+  margin-bottom: 30px;
 }
 
 h3 {
   font-size: 30px;
+  margin-bottom: 20px;
+  margin-top: 40px;
 }
 
 h4 {
@@ -46,61 +57,23 @@ h4 {
 p {
   font-size: 22px;
   line-height: 1.5; /* no unit >> 1.5 * font-size >> default = 1 */
+  margin-bottom: 15px;
+}
+
+ul,
+ol {
+  margin-left: 50px;
+  margin-bottom: 20px;
 }
 
 li {
   font-size: 20px;
+  /* usually, we don't want margin-bot for the last item in <li>, we just want space between each <li> >>> use pseudo class */
+  margin-bottom: 10px;
 }
 
-/*text in <p> in <footer> normally are smaller than the others*/
-/* decendent selectors: all elements that are children of <footer> */
-/* footer p {
-  font-size: 16px;
-} */
-#copyright {
-  font-size: 16px;
-}
-/* hard to read >> use ID & class */
-/* article header p {
-  font-style: italic;
-} */
-
-#author {
-  font-style: italic;
-  font-size: 18px;
-}
-
-.related-author {
-  font-size: 18px;
-  font-weight: bold;
-}
-
-/* ul {
-  list-style: none;
-} */
-
-/*  
-  why we use class in this case? There is only 1 <ul> that we want with this style.
-  - The reason is in the real world, we almost never use id. We always use class to prepare for the future 
-*/
-.related {
-  list-style: none;
-}
-
-/* in practice, we mostly use hexadecimal colors, and rgba when we need transparency 
-- black 0, 0, 0
-- white 255, 255, 255
-- gray 4, 4, 4 >> #444 >> same code in between 0 & 255
-*/
-
-.main-header {
-  background-color: #f7f7f7;
-}
-
-aside {
-  background-color: #f7f7f7;
-  border-top: 5px solid #7ea690;
-  border-bottom: 5px solid #7ea690;
+li:last-child {
+  margin-bottom: 0;
 }
 
 /* .first-li {
@@ -125,19 +98,6 @@ li:nth-child(2) {
 /* odd || even */
 li:nth-child(odd) {
   color: #111;
-}
-
-/* select <p> that is the first child of the <article> >> but because the 1st child of the <article> is the <header>, so it does not affect anything
-  If we add <p> as the first child of <article>, it will work normally
-
-  >> we should use the pseudo class in the case that all the chilren are the same tag (i.e: <ul> <li>, <ol> <li>
-*/
-article p:first-child {
-  color: red;
-}
-
-article p:last-child {
-  color: red;
 }
 
 /* styling Links */
@@ -166,6 +126,80 @@ a:active {
   color: yellow;
   font-style: italic;
   background-color: black;
+}
+
+/*text in <p> in <footer> normally are smaller than the others*/
+/* decendent selectors: all elements that are children of <footer> */
+/* footer p {
+  font-size: 16px;
+} */
+#copyright {
+  font-size: 16px;
+}
+/* hard to read >> use ID & class */
+/* article header p {
+  font-style: italic;
+} */
+
+/* ======================================================== */
+nav {
+  font-size: 18px;
+}
+
+.main-header {
+  background-color: #f7f7f7;
+  padding: 20px 40px; /*topbot leftright*/
+  margin-bottom: 60px;
+}
+
+.post-header {
+  margin-bottom: 40px;
+}
+
+article {
+  margin-bottom: 60px;
+}
+
+aside {
+  background-color: #f7f7f7;
+  border-top: 5px solid #7ea690;
+  border-bottom: 5px solid #7ea690;
+  padding: 50px 20px;
+}
+
+#author {
+  font-style: italic;
+  font-size: 18px;
+}
+
+.related-author {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* ul {
+  list-style: none;
+} */
+
+/*  
+  why we use class in this case? There is only 1 <ul> that we want with this style.
+  - The reason is in the real world, we almost never use id. We always use class to prepare for the future 
+*/
+.related {
+  list-style: none;
+}
+
+/* select <p> that is the first child of the <article> >> but because the 1st child of the <article> is the <header>, so it does not affect anything
+  If we add <p> as the first child of <article>, it will work normally
+
+  >> we should use the pseudo class in the case that all the chilren are the same tag (i.e: <ul> <li>, <ol> <li>
+*/
+article p:first-child {
+  color: red;
+}
+
+article p:last-child {
+  color: red;
 }
 
 /* Conflicts between Selectors (Multiple styles apply to 1 selector)

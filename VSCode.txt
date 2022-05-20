@@ -23,6 +23,7 @@ Font:
 Descendents Selectors: select ALL children in that tag 
 	i.e: footer p{}: select all <p> tag in <footer> 
 	
+---------------------------------------
 ul, ol:
 - list-style: none (remove bullets)
 
@@ -32,7 +33,7 @@ a:link{} a:visited{}, a:hover{}, a:active{}
 - text-decoration:none;
 
 
-
+---------------------------------------
 Conflicts between Selectors (Multiple styles apply to 1 selector)
 - same kind of selectors >> then the last will apply
 1) !important (hack >> not recommened) 
@@ -42,5 +43,23 @@ Conflicts between Selectors (Multiple styles apply to 1 selector)
 5) Element 
 6) Universal (*)
 
+---------------------------------------
+not every properties are inheritted >> just text, color properties are inheritted 
+NOT INHERITTED: border
+
+
+---------------------------------------
+universal selector: no inheritance >> just apply to all elements >> easy to overwrite every single element will have border-top 
+
+---------------------------------------
+Final element width = LeftBorder + Left Padding + With + RightPadding + RightBorder (NO MARGIN) >> this is the default behaviour
+
+Usually, we don't want margin-bot for the last item in <li>, we just want space between each <li> >>> use pseudo class
+
+We always use margin-bot to create vertical margin between parts in our website >> Don't mix between margin-top and margin-top at the same time >>> use only 1
+
+Collapsing Margins: when we have 2 margins occupy the same space, just 1 of them is shown (most of the time is the bigger one )
+
+---------------------------------------
 background-color: #f7f7f7;
 color: #444;
