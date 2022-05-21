@@ -20,6 +20,8 @@ Font:
 - font-family (sans-serif)
 - font-weight (bold)
 
+- letter-spacing
+- line-height
 ---------------------------------------
 background-color: #f7f7f7;
 color: #444;
@@ -162,6 +164,15 @@ h2::after {
   right: 5px;
 }
 
+
+========== LAYOUTS: FLOATS, FLEXBOX & CSS GRID =======
+
+FLOAT: 
+.container{
+	float: left; // khi set như vậy thì những elements khác sẽ float around thằng này >> lúc này nếu set padding của những item xung quanh sẽ ra không đủ >> lý do là vì item sẽ bắt đầu ngay phía dưới của element đc float 
+}
+
+Khi 2 element kế bên đều float thì height của chúng sẽ bị collapse >> lúc này height = 0
 
 
 
