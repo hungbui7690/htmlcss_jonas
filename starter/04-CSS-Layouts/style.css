@@ -286,3 +286,15 @@ h1 {
 nav {
   float: right;
 }
+
+/* method 1:  */
+/* .clear {
+  clear: both;
+} */
+
+/* method 2: clear-fix heack */
+.clear-fix::after {
+  content: "";
+  clear: both;
+  display: block;
+}

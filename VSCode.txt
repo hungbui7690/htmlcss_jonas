@@ -174,6 +174,28 @@ FLOAT:
 
 Khi 2 element kế bên đều float thì height của chúng sẽ bị collapse >> lúc này height = 0
 
+------
+CLEAR FLOATS:
+==== Method 1:
+<div class="clear"></div> // đặt ngay dưới element đã set float
+.clear {
+  clear: both;
+}
+
+==== Method 2: clear-fix hack
+<header>
+	<h1>
+	<nav>
+</header> 
+
+sau khi set float ở h1 và nav thì thằng header sẽ bị collapse height >> add class "clear-fix" ở thằng <header> 
+
+.clear-fix::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
 
 
 
