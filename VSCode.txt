@@ -135,12 +135,32 @@ button{
 
 if the button are inside the .container, and both <body> and .container has position:relative >> relate to nearest parent >> relate to .container's position
 
+---------------------------------------
+PSEUDO ELEMENT
+- first-letter
+- first-line
+
+h1::first-letter{
+
+}
+
+div + p::first-line >>> selects the first <p> element that is placed immediately after <div> elements
 
 
+h2{
+	position:relative;
+}
 
-
-
-
+h2::after {
+  content: "TOP"; /*mandatory*/
+  background-color: lightgoldenrodyellow;
+  font-size: 16px;
+  display: inline-block;
+  padding: 5px 10px;
+  position: absolute;
+  top: -5px;
+  right: 5px;
+}
 
 
 
