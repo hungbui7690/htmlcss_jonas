@@ -107,3 +107,43 @@ Inline Level Boxes: Img, strong, a, em, button ...
 >> look like inline, but behave like block 
 
 <img> tag is default inline-block >> we can test by setting up the margin, then we can see the margin-top & bot are applied without set display: inline-block
+
+-------------------------------------------
+
+Normal Flow: 
+- position: relative 
+
+Absolute Positioning 
+- position: absolute 
+- out of low 
+- no impact on surrounding element >> might overlap them 
+- we use top, bot, left, right to offset the element from its "relatively positioned container"
+- need to be "inside" of parent container in order to set the position correctly
+
+If there's no relative container >>> relate to the viewport 
+
+
+body{
+	position: relative;
+}
+container{
+	position: relative;
+}
+button{
+	position: absolute;
+}
+
+if the button are inside the .container, and both <body> and .container has position:relative >> relate to nearest parent >> relate to .container's position
+
+
+
+
+
+
+
+
+
+
+
+
+
