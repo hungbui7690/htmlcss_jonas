@@ -14,7 +14,7 @@ body {
 }
 
 .container {
-  width: 800px;
+  width: 1200px;
   /* margin-left: auto;
   margin-right: auto; */
   margin: 0 auto;
@@ -134,10 +134,6 @@ li:last-child {
 
 .related {
   list-style: none;
-}
-
-body {
-  /* background-color: orangered; */
 }
 
 /* .first-li {
@@ -297,4 +293,22 @@ nav {
   content: "";
   clear: both;
   display: block;
+}
+
+article {
+  background-color: green;
+  width: 825px;
+  float: left;
+}
+
+aside {
+  background-color: red;
+  width: 300px;
+  float: right;
+}
+
+footer {
+  background-color: yellow;
+  /* we don't need to create the clear-fix <div> or clear-fix hack since we have the footer right at the end of those <div> >> so we use it as the clear-fix hack */
+  clear: both;
 }
