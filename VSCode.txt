@@ -83,3 +83,27 @@ put everything in the container >> <div class="container"> </div>
   margin: 0 auto;
 }
 
+----------------------------------------
+
+Block Level Boxes: h1, p, body, main, header, footer, seciton, nav, aside, div, ul, ol, li...
+- occupy 100% of parent element's width no matter the content 
+- stack vertically by default, one after another 
+- box-model is applied
+- display: block
+
+Inline Level Boxes: Img, strong, a, em, button ...
+- occupies only the space necessary for its content 
+- cause no line-break after or before the element 
+- box-level applies in a diff way: heights & widths do not apply 
+- padding & margin are applied only horizontally (Left & Right)
+- display: inline
+
+
+== INLINE-BLOCK: 
+- display: inline-block
+- occupies only content's space 
+- causes no line breaks
+- box-model apllies normally >> can apply width, height + margin
+>> look like inline, but behave like block 
+
+<img> tag is default inline-block >> we can test by setting up the margin, then we can see the margin-top & bot are applied without set display: inline-block
