@@ -1,3 +1,11 @@
+Shift + Click: Chia những quân đều nhau ra những ô trống
+Ctrl + Click: Chia 1 quân ra 1 ô trống.
+Alt + Click: Gộp lại những quân cùng 1 loại.
+Ctrl + Shift + Click: Chia 1 quân ra tất cả những ô trống.
+Alt + Shift + Click: Xóa quân hiện tại.
+F4: Chuyển đổi chế độ cửa sổ hoặc full màn hình.
+
+
 ===VSCODE===
 Extensions: 
 - Color Highlight
@@ -195,7 +203,6 @@ sau khi set float ở h1 và nav thì thằng header sẽ bị collapse height >
   clear: both;
   display: block;
 }
-
 
 
 

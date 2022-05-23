@@ -1,0 +1,169 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  line-height: 1.4;
+}
+
+/* ===== GENERAL ====== */
+p {
+  margin-bottom: 20px;
+}
+
+.btn-color {
+  display: inline-block;
+  padding: 10px;
+  border: none;
+}
+.btn-black {
+  background-color: black;
+}
+
+.btn-blue {
+  background-color: blue;
+}
+
+.btn-red {
+  background-color: red;
+}
+
+.btn-yellow {
+  background-color: orange;
+}
+
+.btn-green {
+  background-color: green;
+}
+
+.btn-brown {
+  background-color: brown;
+}
+
+p.sale {
+  display: inline-block;
+  background-color: red;
+  color: white;
+  font-size: 13px;
+  font-weight: bold;
+  text-transform: uppercase;
+  border: 1px solid red;
+  border-top: 1px solid black;
+  padding: 3px 10px;
+  position: absolute;
+  top: -15px;
+  left: -30px;
+  letter-spacing: 2px;
+}
+
+/* ================= MAIN SECTION ================= */
+
+.product {
+  border: 4px solid black;
+  width: 1200px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.product-title {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 22px;
+  background-color: #f7f7f7;
+  padding: 20px;
+}
+
+.product-price {
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+
+.product-shipping {
+  color: #777;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 12px;
+  margin-bottom: 20px;
+}
+
+.more-info:link,
+.more-info:visited {
+  color: black;
+  display: inline-block;
+  margin-bottom: 15px;
+}
+
+.more-info:hover,
+.more-info:active {
+  text-decoration: none;
+}
+
+/* PRODUCT DETAILS */
+.details-title {
+  text-transform: uppercase;
+  font-size: 16px;
+  margin-top: 35px;
+  margin-bottom: 10px;
+}
+
+.details-list {
+  list-style: square;
+  margin-left: 20px;
+  margin-bottom: 15px;
+}
+
+.add-cart {
+  background-color: black;
+  border: none;
+  color: white;
+  font-size: 20px;
+  text-transform: uppercase;
+  cursor: pointer;
+  width: 100%;
+  padding: 15px;
+}
+
+.add-cart:hover {
+  background-color: white;
+  color: black;
+  border-top: 4px solid black;
+}
+
+.product-img {
+  margin-bottom: 20px;
+  width: 400px;
+  float: left;
+}
+
+.product-info {
+  float: left;
+  width: 400px;
+  padding: 10px 10px;
+}
+
+.product-details {
+  float: right;
+  width: 400px;
+  padding: 10px 10px;
+}
+
+.product-img::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+.product-info::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+.product-details::after {
+  content: "";
+  clear: both;
+  display: block;
+}
